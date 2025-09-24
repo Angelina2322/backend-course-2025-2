@@ -1,2 +1,2 @@
-course://web.backend/?name="Angelina"&group="ФЕІ-27с"&subgroup="Підгрупа 2"#Angelina2322
+course://web.backend/?name=%22Angelina%22&group=%22%D0%A4%D0%95%D0%86-27%D1%81%22&subgroup=%22%D0%9F%D1%96%D0%B4%D0%B3%D1%80%D1%83%D0%BF%D0%B0%202%22#Angelina2322%0D%0A
 
