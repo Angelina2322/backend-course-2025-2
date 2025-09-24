@@ -1,1 +1,2 @@
+course://web.backend/?name="Angelina"&group="ФЕІ-27с"&subgroup="Підгрупа 2"#Angelina2322
 
