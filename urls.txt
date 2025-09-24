@@ -1,0 +1,1 @@
+https://bank.gov.ua/NBUStatService/v1/statdirectory/inflation?date=20230201&period=m&json
