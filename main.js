@@ -1,7 +1,7 @@
 // main.js
 
 // Підключаємо модуль URL (вбудований в Node.js)
-const { URL, URLSearchParams } = require('url');
+const { URL } = require('url');
 
 // Константи для варіанту 7
 const date = "20230201";      // дата для запиту
@@ -14,11 +14,9 @@ const baseURL = "https://bank.gov.ua/NBUStatService/v1/statdirectory/inflation";
 const url = new URL(baseURL);
 
 // Додаємо параметри через SearchParams
-url.search = new URLSearchParams({
-  date: date,
-  period: time_period,
-  json: ""   // для отримання JSON
-});
+url.searchParams.append("date", date);
+url.searchParams.append("period", time_period);
+url.searchParams.append("json");   // json без значення
 
 // Виводимо URL у консоль
 console.log(url.toString());
