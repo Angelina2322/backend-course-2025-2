@@ -1,6 +1,7 @@
 // main.js
 
 const { URL } = require('url');
+const fetch = require('node-fetch'); // додати сюди для Node < 18
 
 // Константи для варіанту 7
 const date = "20230201";
@@ -21,11 +22,7 @@ url.searchParams.append("json", "true");   // json=true
 console.log(url.toString());
 
 // --- Перевірка URL ---
-const fetch = require('node-fetch'); // якщо Node.js < 18, встанови: npm install node-fetch
-
 fetch(url.toString())
   .then(res => res.json())
-  .then(data => {
-    console.log(data); // виведе дані від сервера
-  })
+  .then(data => console.log(data)) // виведе дані від сервера
   .catch(err => console.error(err));
